@@ -260,19 +260,41 @@ def main():
             
             if target_release:
                 file_list = 下载资源(target_release["assets"])
+                
+                # 准备元数据
+                bj_time = utc_to_bj_str(target_release['published_at'])
+                html_url = target_release['html_url']
+                body_content = target_release.get('body', '') or ''
+                
+                # 构建最终的 Release Body (Markdown)
+                final_body = f"""历史版本存档 - 自动同步自 [{REPO_OWNER}/{REPO_NAME}](https://github.com/{REPO_OWNER}/{REPO_NAME})
+                
+原始页面: {html_url}
+发布时间: {bj_time}
+
+{body_content}
+"""
+                # 保存 Body 到文件
+                with open("release_body.md", "w", encoding="utf-8") as f:
+                    f.write(final_body)
+                    
+                # 保存其他信息到 JSON
+                info = {
+                    "tag_name": target_release["tag_name"],
+                    "title": f"v2rayN {target_release['tag_name']}",
+                    "files": file_list
+                }
+                with open("release_info.json", "w", encoding="utf-8") as f:
+                    json.dump(info, f, ensure_ascii=False, indent=2)
+
+                # 兼容旧的 GITHUB_OUTPUT 逻辑 (可选，为了保证不破坏其他流程暂时保留，虽然即将废弃)
                 if "GITHUB_OUTPUT" in os.environ:
                     with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-                        # NEW: 使用 Heredoc 避免乱码
-                        body_content = target_release.get('body', '') or ''
                         f.write("body<<EOF\n")
                         f.write(body_content)
                         f.write("\nEOF\n")
-                        
-                        # NEW: 转换时间
-                        bj_time = utc_to_bj_str(target_release['published_at'])
                         f.write(f"published_at={bj_time}\n")
-                        
-                        f.write(f"html_url={target_release['html_url']}\n")
+                        f.write(f"html_url={html_url}\n")
                         f.write("assets<<EOF\n")
                         f.write('\n'.join(file_list))
                         f.write("\nEOF\n")

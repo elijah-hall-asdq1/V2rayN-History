@@ -7,11 +7,9 @@ permissions:
   contents: write
 
 jobs:
-  fetch_versions:
-    name: 获取版本列表
+  backup_all_releases:
+    name: 备份所有版本
     runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.get-versions.outputs.matrix }}
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -24,66 +22,69 @@ jobs:
       - name: 安装依赖
         run: pip install requests
 
-      - name: 获取所有历史版本
-        id: get-versions
+      - name: 执行批量备份
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          VERSION_JSON=$(python check_version.py --api-history)
-          echo "matrix=$VERSION_JSON" >> $GITHUB_OUTPUT
-
-  backup_releases:
-    name: 备份发布
-    needs: fetch_versions
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    strategy:
-      max-parallel: 1
-      fail-fast: false
-      matrix:
-        item: ${{ fromJson(needs.fetch_versions.outputs.matrix) }}
-    steps:
-      - name: 检出代码
-        uses: actions/checkout@v4
-
-      - name: 设置 Python 环境
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: 安装依赖
-        run: pip install requests
-
-      - name: 检查 Release 是否已存在
-        id: check_release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TAG: ${{ matrix.item.version }}
-        run: |
-          gh release view "$TAG" > /dev/null 2>&1 && echo "exists=true" >> $GITHUB_OUTPUT || echo "exists=false" >> $GITHUB_OUTPUT
-
-      - name: 检查并下载资源
-        if: steps.check_release.outputs.exists == 'false'
-        id: download
-        run: python check_version.py --download ${{ matrix.item.version }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: 创建 Release
-        if: steps.check_release.outputs.exists == 'false'
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ matrix.item.version }}
-          name: v2rayN ${{ matrix.item.version }}
-          body: |
-            历史版本存档 - 自动同步自 [2dust/v2rayN](https://github.com/2dust/v2rayN)
+          # 1. 获取所有版本列表
+          echo "正在获取版本列表..."
+          python check_version.py --api-history > versions.json
+          
+          # 2. 遍历版本
+          # 使用 jq 提取版本号 (需要确保 jq 已安装，Github Runner 默认包含)
+          jq -r '.[].version' versions.json | while read tag; do
+            echo "--------------------------------------------------"
+            echo "处理版本: $tag"
             
-            原始页面: ${{ steps.download.outputs.html_url }}
-            发布时间: ${{ steps.download.outputs.published_at }}
+            # 3. 检查 Release 是否已存在
+            if gh release view "$tag" > /dev/null 2>&1; then
+              echo "✅ Release $tag 已存在，跳过。"
+              continue
+            fi
             
-            ${{ steps.download.outputs.body }}
-          files: |
-            ${{ steps.download.outputs.assets }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            echo "📥 Release $tag 不存在，开始下载..."
+            
+            # 4. 下载资源并生成元数据
+            # 脚本会生成 release_body.md 和 release_info.json
+            python check_version.py --download "$tag"
+            
+            # 检查是否成功生成文件
+            if [ ! -f release_info.json ]; then
+              echo "❌ 错误: 未找到元数据文件，跳过 $tag"
+              continue
+            fi
+            
+            # 5. 读取元数据
+            TITLE=$(jq -r '.title' release_info.json)
+            
+            # 提取文件列表并构建上传参数
+            # 注意：这里假设文件名不包含特殊字符
+            jq -r '.files[]' release_info.json > files_list.txt
+            
+            # 6. 创建 Release
+            echo "🚀 正在创建 Release: $TITLE ..."
+            
+            # 使用 xargs 构建文件参数列表显得更安全，或者直接作为参数传递
+            # gh release create 支持直接跟文件路径
+            
+            FILE_ARGS=$(cat files_list.txt | tr '\n' ' ')
+            
+            if gh release create "$tag" --title "$TITLE" --notes-file release_body.md $FILE_ARGS; then
+               echo "✅ $tag 备份成功！"
+            else
+               echo "❌ $tag 备份失败！"
+               # 不退出，继续下一个
+            fi
+            
+            # 7. 清理文件
+            echo "🧹 清理临时文件..."
+            if [ -f files_list.txt ]; then
+                xargs rm -f < files_list.txt
+                rm files_list.txt
+            fi
+            rm -f release_body.md release_info.json
+            
+            # 避免请求过快触发限制 (虽然是备份自己仓库，但下载是去 2dust)
+            sleep 2
+            
+          done
