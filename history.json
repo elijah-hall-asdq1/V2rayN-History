@@ -1,5 +1,68 @@
 [
     {
+        "tag_name": "7.19.0",
+        "published_at": "2026-02-26T12:09:39Z",
+        "html_url": "https://github.com/2dust/v2rayN/releases/tag/7.19.0",
+        "assets": [
+            {
+                "name": "v2rayN-linux-64.deb",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-linux-64.deb"
+            },
+            {
+                "name": "v2rayN-linux-64.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-linux-64.zip"
+            },
+            {
+                "name": "v2rayN-linux-arm64.deb",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-linux-arm64.deb"
+            },
+            {
+                "name": "v2rayN-linux-arm64.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-linux-arm64.zip"
+            },
+            {
+                "name": "v2rayN-linux-rhel-64.rpm",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-linux-rhel-64.rpm"
+            },
+            {
+                "name": "v2rayN-linux-rhel-arm64.rpm",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-linux-rhel-arm64.rpm"
+            },
+            {
+                "name": "v2rayN-macos-64.dmg",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-macos-64.dmg"
+            },
+            {
+                "name": "v2rayN-macos-64.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-macos-64.zip"
+            },
+            {
+                "name": "v2rayN-macos-arm64.dmg",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-macos-arm64.dmg"
+            },
+            {
+                "name": "v2rayN-macos-arm64.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-macos-arm64.zip"
+            },
+            {
+                "name": "v2rayN-windows-64-desktop.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-windows-64-desktop.zip"
+            },
+            {
+                "name": "v2rayN-windows-64.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-windows-64.zip"
+            },
+            {
+                "name": "v2rayN-windows-arm64-desktop.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-windows-arm64-desktop.zip"
+            },
+            {
+                "name": "v2rayN-windows-arm64.zip",
+                "browser_download_url": "https://github.com/2dust/v2rayN/releases/download/7.19.0/v2rayN-windows-arm64.zip"
+            }
+        ]
+    },
+    {
         "tag_name": "7.18.0",
         "published_at": "2026-02-04T07:22:10Z",
         "html_url": "https://github.com/2dust/v2rayN/releases/tag/7.18.0",
