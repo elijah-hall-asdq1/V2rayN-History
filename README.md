@@ -2,19 +2,44 @@
 
 > [!TIP]
 > 本仓库自动监控并备份 [2dust/v2rayN](https://github.com/2dust/v2rayN) 的 Release 版本。
-> 上次检测时间 (UTC+8): 2026-03-20 17:42:28
+> 上次检测时间 (UTC+8): 2026-03-20 18:39:26
 
 ## 🌟 最新版本 (Latest)
-### 🔥 7.19.4
-**发布时间 (UTC+8)**: `2026-03-13 10:46:30`  |  [查看详细变更日志](https://github.com/2dust/v2rayN/releases/tag/7.19.4)
+### 🔥 7.19.5
+**发布时间 (UTC+8)**: `2026-03-20 18:01:12`  |  [查看详细变更日志](https://github.com/2dust/v2rayN/releases/tag/7.19.5)
 
 | 平台 (Platform) | 为了美观，请下载对应的版本 (Download) |
 | :--- | :--- |
-| 🪟 **Windows** | [v2rayN-windows-64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-windows-64-desktop.zip)<br>[v2rayN-windows-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-windows-64.zip)<br>[v2rayN-windows-arm64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-windows-arm64-desktop.zip)<br>[v2rayN-windows-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-windows-arm64.zip) |
-| 🍎 **macOS** | [v2rayN-macos-64.dmg](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-macos-64.dmg)<br>[v2rayN-macos-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-macos-64.zip)<br>[v2rayN-macos-arm64.dmg](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-macos-arm64.dmg)<br>[v2rayN-macos-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-macos-arm64.zip) |
-| 🐧 **Linux** | [v2rayN-linux-64.deb](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-linux-64.deb)<br>[v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-linux-64.zip)<br>[v2rayN-linux-arm64.deb](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-linux-arm64.deb)<br>[v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-linux-arm64.zip)<br>[v2rayN-linux-rhel-64.rpm](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-linux-rhel-64.rpm)<br>[v2rayN-linux-rhel-arm64.rpm](https://github.com/2dust/v2rayN/releases/download/7.19.4/v2rayN-linux-rhel-arm64.rpm) |
+| 🪟 **Windows** | [v2rayN-windows-64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-64-desktop.zip)<br>[v2rayN-windows-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-64.zip)<br>[v2rayN-windows-arm64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-arm64-desktop.zip)<br>[v2rayN-windows-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-arm64.zip) |
+| 🍎 **macOS** | [v2rayN-macos-64.dmg](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-64.dmg)<br>[v2rayN-macos-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-64.zip)<br>[v2rayN-macos-arm64.dmg](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-arm64.dmg)<br>[v2rayN-macos-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-arm64.zip) |
+| 🐧 **Linux** | [v2rayN-linux-64.deb](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-64.deb)<br>[v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-64.zip)<br>[v2rayN-linux-arm64.deb](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-arm64.deb)<br>[v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-arm64.zip)<br>[v2rayN-linux-rhel-64.rpm](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-rhel-64.rpm)<br>[v2rayN-linux-rhel-arm64.rpm](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-rhel-arm64.rpm) |
 
 ## 📜 所有历史版本 (All Versions)
+
+### 7.19.5
+> 📅 **发布时间**: `2026-03-20 18:01:12` &nbsp;&nbsp;|&nbsp;&nbsp; 🔗 [查看原始发布页面 (Source)](https://github.com/2dust/v2rayN/releases/tag/7.19.5)
+
+#### 🪟 Windows
+- [v2rayN-windows-64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-64-desktop.zip)
+- [v2rayN-windows-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-64.zip)
+- [v2rayN-windows-arm64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-arm64-desktop.zip)
+- [v2rayN-windows-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-arm64.zip)
+
+#### 🍎 macOS
+- [v2rayN-macos-64.dmg](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-64.dmg)
+- [v2rayN-macos-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-64.zip)
+- [v2rayN-macos-arm64.dmg](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-arm64.dmg)
+- [v2rayN-macos-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-macos-arm64.zip)
+
+#### 🐧 Linux
+- [v2rayN-linux-64.deb](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-64.deb)
+- [v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-64.zip)
+- [v2rayN-linux-arm64.deb](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-arm64.deb)
+- [v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-arm64.zip)
+- [v2rayN-linux-rhel-64.rpm](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-rhel-64.rpm)
+- [v2rayN-linux-rhel-arm64.rpm](https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-linux-rhel-arm64.rpm)
+
+---
 
 ### 7.19.4
 > 📅 **发布时间**: `2026-03-13 10:46:30` &nbsp;&nbsp;|&nbsp;&nbsp; 🔗 [查看原始发布页面 (Source)](https://github.com/2dust/v2rayN/releases/tag/7.19.4)
@@ -1313,11 +1338,6 @@
 - [v2rayN-linux-arm64.AppImage](https://github.com/2dust/v2rayN/releases/download/7.13.1/v2rayN-linux-arm64.AppImage)
 - [v2rayN-linux-arm64.deb](https://github.com/2dust/v2rayN/releases/download/7.13.1/v2rayN-linux-arm64.deb)
 - [v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.13.1/v2rayN-linux-arm64.zip)
-
----
-
-### 7.13.0
-> 📅 **发布时间**: `2025-07-14 13:26:25` &nbsp;&nbsp;|&nbsp;&nbsp; 🔗 [查看原始发布页面 (Source)](https://github.com/2dust/v2rayN/releases/tag/7.13.0)
 
 ---
 
