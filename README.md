@@ -2,7 +2,7 @@
 
 > [!TIP]
 > 本仓库自动监控并备份 [2dust/v2rayN](https://github.com/2dust/v2rayN) 的 Release 版本。
-> 上次检测时间 (UTC+8): 2026-05-10 18:16:05
+> 上次检测时间 (UTC+8): 2026-05-10 19:52:42
 
 ## 🌟 最新版本 (Latest)
 ### 🔥 7.21.3
@@ -12,7 +12,7 @@
 | :--- | :--- |
 | 🪟 **Windows** | [v2rayN-windows-64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-windows-64-desktop.zip)<br>[v2rayN-windows-64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-windows-64.zip)<br>[v2rayN-windows-arm64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-windows-arm64-desktop.zip)<br>[v2rayN-windows-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-windows-arm64.zip) |
 | 🍎 **macOS** | [v2rayN-macos-64.dmg](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-macos-64.dmg)<br>[v2rayN-macos-64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-macos-64.zip)<br>[v2rayN-macos-arm64.dmg](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-macos-arm64.dmg)<br>[v2rayN-macos-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-macos-arm64.zip) |
-| 🐧 **Linux** | [v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-64.zip)<br>[v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-arm64.zip) |
+| 🐧 **Linux** | [v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-64.zip)<br>[v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-arm64.zip)<br>[v2rayN-linux-rhel-riscv64.rpm](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-rhel-riscv64.rpm) |
 
 ## 📜 所有历史版本 (All Versions)
 
@@ -34,6 +34,7 @@
 #### 🐧 Linux
 - [v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-64.zip)
 - [v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-arm64.zip)
+- [v2rayN-linux-rhel-riscv64.rpm](https://github.com/2dust/v2rayN/releases/download/7.21.3/v2rayN-linux-rhel-riscv64.rpm)
 
 ---
 
