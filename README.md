@@ -2,7 +2,7 @@
 
 > [!TIP]
 > 本仓库自动监控并备份 [2dust/v2rayN](https://github.com/2dust/v2rayN) 的 Release 版本。
-> 上次检测时间 (UTC+8): 2026-05-29 11:42:42
+> 上次检测时间 (UTC+8): 2026-05-29 15:57:52
 
 ## 🌟 最新版本 (Latest)
 ### 🔥 7.22.4
@@ -12,7 +12,7 @@
 | :--- | :--- |
 | 🪟 **Windows** | [v2rayN-windows-64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-windows-64-desktop.zip)<br>[v2rayN-windows-64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-windows-64.zip)<br>[v2rayN-windows-arm64-desktop.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-windows-arm64-desktop.zip)<br>[v2rayN-windows-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-windows-arm64.zip) |
 | 🍎 **macOS** | [v2rayN-macos-64.dmg](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-macos-64.dmg)<br>[v2rayN-macos-64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-macos-64.zip)<br>[v2rayN-macos-arm64.dmg](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-macos-arm64.dmg)<br>[v2rayN-macos-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-macos-arm64.zip) |
-| 🐧 **Linux** | [v2rayN-linux-64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-64.deb)<br>[v2rayN-linux-arm64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-arm64.deb)<br>[v2rayN-linux-loong64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-loong64.deb)<br>[v2rayN-linux-rhel-64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-64.rpm)<br>[v2rayN-linux-rhel-arm64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-arm64.rpm)<br>[v2rayN-linux-rhel-riscv64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-riscv64.rpm)<br>[v2rayN-linux-riscv64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-riscv64.deb) |
+| 🐧 **Linux** | [v2rayN-linux-64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-64.deb)<br>[v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-64.zip)<br>[v2rayN-linux-arm64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-arm64.deb)<br>[v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-arm64.zip)<br>[v2rayN-linux-loong64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-loong64.deb)<br>[v2rayN-linux-rhel-64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-64.rpm)<br>[v2rayN-linux-rhel-arm64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-arm64.rpm)<br>[v2rayN-linux-rhel-riscv64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-riscv64.rpm)<br>[v2rayN-linux-riscv64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-riscv64.deb) |
 
 ## 📜 所有历史版本 (All Versions)
 
@@ -33,7 +33,9 @@
 
 #### 🐧 Linux
 - [v2rayN-linux-64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-64.deb)
+- [v2rayN-linux-64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-64.zip)
 - [v2rayN-linux-arm64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-arm64.deb)
+- [v2rayN-linux-arm64.zip](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-arm64.zip)
 - [v2rayN-linux-loong64.deb](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-loong64.deb)
 - [v2rayN-linux-rhel-64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-64.rpm)
 - [v2rayN-linux-rhel-arm64.rpm](https://github.com/2dust/v2rayN/releases/download/7.22.4/v2rayN-linux-rhel-arm64.rpm)
